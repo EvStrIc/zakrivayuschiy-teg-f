@@ -460,8 +460,8 @@
 
 .content__section-list-button {
   margin-block-end: 100px;
-  inline-size: minmax(306px, 335px);
-
+  inline-size: 355px;
+  block-size: 55px;
 }
 
 .save-button {
