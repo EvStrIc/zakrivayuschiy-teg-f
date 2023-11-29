@@ -483,6 +483,8 @@
 .floppy-icon {
   display: flex;
   flex-shrink: 0;
+  max-block-size: 39px;
+  max-inline-size: 39px;
 }
 
 .dialog__box {
