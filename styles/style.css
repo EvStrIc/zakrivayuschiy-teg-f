@@ -485,6 +485,7 @@
   flex-shrink: 0;
   max-block-size: 39px;
   max-inline-size: 39px;
+  color: var(--button-text-hover-color, #fff)
 }
 
 .dialog__box {
