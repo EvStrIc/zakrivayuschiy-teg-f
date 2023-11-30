@@ -9,7 +9,8 @@
   --card-text-font-weight: 400;
   --accent-color: #000;
   --stroke-color: #fff;
-  --button-text-hover-color: #fff;
+  --button-hover-color: #000;
+  --button-hover-text-color: #fff;
   --icon-color: #000;
   --icon-fill-color: #f00;
   --background-color: #fff;

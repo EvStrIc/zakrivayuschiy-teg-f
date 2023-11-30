@@ -396,33 +396,17 @@
   }
 }
 
-.card__like-button {
+.button_decor {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   appearance: none;
   border: none;
   cursor: url(../images/image\ 54.png), pointer;
-  padding: 11px 35px;
-  min-inline-size: 130px;
-  min-block-size: 100%;
-  display: inline-block;
   border: 2px solid var(--accent-color, #000);
   background-color: var(--background-color, #fff);
 }
 
-.button__text {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-accent);
-  color: var(--accent-color, #000);
-  font-size: 14px;
-  font-variation-settings: 'wght' var(--text-font-weight);
-  line-height: 13px;
-  /*transition: 0.5s ease-in-out;
-  mix-blend-mode: difference;*/
-}
-
-.button__text:focus {
+.button_decor:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color, #000);
   animation: button-shadow 0.3s ease;
@@ -438,6 +422,35 @@
   }
 }
 
+.button_decor::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  min-inline-size: 100%;
+  min-block-size: 101%;
+  background-color: var(--button-hover-color, #000);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+}
+
+.button_decor:hover:after {
+  transform: scaleX(1);
+}
+
+.button__text {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-accent);
+  color: var(--button-hover-text-color, #fff);
+  font-size: 14px;
+  font-variation-settings: 'wght' var(--text-font-weight);
+  line-height: 13px;
+  mix-blend-mode: difference;
+}
+
 .button__text::after {
   content: '';
   position: absolute;
@@ -446,13 +459,16 @@
   inset-block-start: 0;
   min-inline-size: 100%;
   min-block-size: 101%;
-  background-color: var(--background-color, #fff);
+  background-color: var(--accent-color, #000);
   transform: scaleX(0);
   transform-origin: left;
 }
 
-.button__text:hover:after {
-  transform: scaleX(1);
+.card__like-button {
+  padding: 11px;
+  min-inline-size: 130px;
+  max-block-size: 38px;
+  display: inline-block;
 }
 
 .content__section-list-button {
@@ -463,18 +479,12 @@
 }
 
 .save-button {
-  position: relative;
-  z-index: 1;
-  appearance: none;
-  cursor: url(../images/image\ 54.png), pointer;
   padding: 15px 20px;
   inline-size: clamp(306px, 100%, 339px);
   min-block-size: 55px;
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 2px solid var(--accent-color, #000);
-  background-color: var(--background-color, #fff);
 }
 
 .save-button_text {
@@ -537,11 +547,8 @@
 }
 
 .dialog__box-button {
-  appearance: none;
   min-inline-size: 100%;
   min-block-size: 38px;
-  border: 2px solid var(--accent-color, #000);
-  background-color: var(--background-color, #fff);
 }
 
 @media (width <= 376px) {

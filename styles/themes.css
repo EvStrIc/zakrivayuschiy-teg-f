@@ -10,6 +10,8 @@
   --card-text-font-weight: 400;
   --accent-color: #000;
   --stroke-color: #fff;
+  --button-hover-color: #000;
+  --button-hover-text-color: #fff;
   --icon-color: #000;
   --background-color: #fff;
   --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
@@ -22,6 +24,8 @@
   --card-text-font-weight: 465;
   --accent-color: #00cc14;
   --stroke-color: #000;
+  --button-hover-color: #00cc14;
+  --button-hover-text-color: #000;
   --icon-color: #00cc14;
   --background-color: #000;
   --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
@@ -37,6 +41,8 @@
     --card-text-font-weight: 465;
     --accent-color: #00cc14;
     --stroke-color: #000;
+    --button-hover-color: #00cc14;
+    --button-hover-text-color: #000;
     --icon-color: #00cc14;
     --background-color: #000;
     --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
