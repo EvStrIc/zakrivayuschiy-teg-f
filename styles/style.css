@@ -419,7 +419,7 @@
   color: var(--accent-color, #000);
   font-size: 14px;
   font-variation-settings: 'wght' var(--text-font-weight);
-  line-height: 14px;
+  line-height: 13px;
   transition: 0.5s ease-in-out;
   mix-blend-mode: difference;
 }
@@ -469,8 +469,8 @@
   z-index: 1;
   appearance: none;
   cursor: url(../images/image\ 54.png), pointer;
-  padding-inline: 20px;
-  inline-size: clamp(306px, 339px, 339px);
+  padding: 15px 20px;
+  inline-size: clamp(306px, 100%, 339px);
   min-block-size: 55px;
   display: flex;
   align-items: center;
@@ -481,6 +481,7 @@
 
 .save-button_text {
   min-inline-size: max-content;
+  max-block-size: 14px;
 }
 
 .save-button__floppy-icon {
@@ -567,5 +568,12 @@
 
   .save-button {  
     flex-direction: column;
+  }
+
+  .save-button__floppy-icon {
+    display: flex;
+    flex-shrink: 0;
+    max-block-size: 28px;
+    max-inline-size: 28px;
   }
 }
