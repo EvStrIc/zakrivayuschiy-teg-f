@@ -419,7 +419,7 @@
   color: var(--accent-color, #000);
   font-size: 14px;
   font-variation-settings: 'wght' var(--text-font-weight);
-  line-height: 13px;
+  line-height: 14px;
   transition: 0.5s ease-in-out;
   mix-blend-mode: difference;
 }
@@ -459,8 +459,9 @@
 
 .content__section-list-button {
   margin-block-end: 100px;
-  inline-size: 355px;
-  block-size: 55px;
+  min-inline-size: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .save-button {
@@ -468,15 +469,25 @@
   z-index: 1;
   appearance: none;
   cursor: url(../images/image\ 54.png), pointer;
-  padding: 15px 20px 15px 18px;
-  min-inline-size: 100%;
-  max-block-size: 100%;
+  padding-inline: 20px;
+  inline-size: clamp(306px, 339px, 339px);
+  min-block-size: 55px;
   display: flex;
-  justify-items: space-between;
   align-items: center;
   gap: 8px;
   border: 2px solid var(--accent-color, #000);
   background-color: var(--background-color, #fff);
+}
+
+.save-button_text {
+  min-inline-size: max-content;
+}
+
+.save-button__floppy-icon {
+  display: flex;
+  flex-shrink: 0;
+  max-block-size: 21px;
+  max-inline-size: 21px;
 }
 
 .floppy-icon {
@@ -552,5 +563,9 @@
 
   .header__theme-menu {
     margin-inline-start: 19px;
+  }
+
+  .save-button {  
+    flex-direction: column;
   }
 }
