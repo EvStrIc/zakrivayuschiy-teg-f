@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --box-inline-size: clamp(375px, 49%, 700px);
+  --box-inline-size: clamp(20rem, -3.75rem + 76vw, 43.75rem);
   --font-main: 'Inter-Variable', sans-serif;
   --font-accent: 'PressStart2P', sans-serif;
   --title-font-weight: 700;
