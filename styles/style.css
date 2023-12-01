@@ -508,11 +508,11 @@
   max-inline-size: 39px;
 }
 
-.floppy-dialog {
+.save-button__floppy-icon .floppy-decor {
   fill: var(--button-hover-text-color, #fff);
 }
 
-.floppy-icon .floppy-dialog {
+.floppy-icon .floppy-decor {
   fill: var(--accent-color, #000);
 }
 
