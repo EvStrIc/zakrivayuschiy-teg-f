@@ -19,12 +19,12 @@
   </head>
   <body class="page">
     <header class="header box-inline-size">
-      <a class="header__main-title">
+      <h1 class="header__main-title">
         &lt;/HTML&gt;
-      </a>
-      <h1 class="header__title">
-          закрывающий тег
       </h1>
+      <h2 class="header__title">
+          закрывающий тег
+      </h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -55,9 +55,9 @@
       <section class="content__section">
         <ul class="content__section-list">
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               Фритрек и нулевой спринт: Подготовка к работе
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image" src="./images/image.png" alt="Пиксельное изображение фудтрака" />
               <p class="image-label">&lt;/HTML&gt;</p>
@@ -72,7 +72,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -82,15 +82,17 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               1 спринт: Я — чистый лист
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image image-grayscale" src="./images/image.png" alt="Пиксельное изображение фудтрака"/>
               <p class="image-label">&lt;/HTML&gt;</p>
@@ -107,7 +109,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -117,15 +119,17 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               1 спринт: А если не получится?
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image image-saturate" src="./images/image.png" alt="Пиксельное изображение фудтрака"/>
               <p class="image-label">&lt;CSS&gt;</p>
@@ -141,7 +145,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -151,15 +155,17 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               2 спринт: Погоня за идеалом
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image image-hue" src="./images/image.png" alt="Пиксельное изображение фудтрака"/>
               <p class="image-label">&lt;desigions&gt;</p>
@@ -175,7 +181,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -185,15 +191,17 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               2 спринт: О тех, кто рядом
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image image-invert" src="./images/image.png" alt="Пиксельное изображение фудтрака"/>
               <p class="image-label">care</p>
@@ -210,7 +218,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -220,15 +228,17 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               3 спринт: Обходные стратегии
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image image-sepia" src="./images/image.png" alt="Пиксельное изображение фудтрака"/>
               <p class="image-label">&lt;support&gt;</p>
@@ -243,7 +253,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -253,15 +263,17 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               3 спринт: Когда опускаются руки
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image image-blur" src="./images/image.png" alt="Пиксельное изображение фудтрака"/>
               <p class="image-label">&lt;lifes-style: none;&gt;</p>
@@ -277,7 +289,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -287,15 +299,17 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="content__section-list-card">
-            <h2 class="content__section-list-card_title">
+            <h3 class="content__section-list-card_title">
               «Сейчас я здесь»
-            </h2>
+            </h3>
             <div class="content__section-list-card_image">
               <img class="card-image image-filter-combined" src="./images/image.png" alt="Пиксельное изображение фудтрака"/>
               <p class="image-label">&lt;experience&gt;</p>
@@ -312,7 +326,7 @@
               </p>
             </div>
             <div class="content__section-list-card_buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--icon-color)"/>
@@ -322,30 +336,32 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--icon-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button button_decor" onclick="this.className='card__like-button_clicked'">
+              <button class="card__like-button button_decor" 
+                      type="button" 
+                      onclick="this.className='card__like-button_clicked'">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
-          <li class="content__section-list-button">
-            <button class="save-button button_decor"
-                    type="button" 
-                    onclick="window['insert-floppy'].showModal()" 
-                    aria-controls="insert-floppy"
-                  >
-              <svg class="save-button__floppy-icon" viewBox="0 0 39 39">
-                  <use xlink:href="./svg/floppy.svg#floppy-svg"></use>
-              </svg>
-              <span class="save-button_text button__text">Сохранить на память</span>
-            </button>
-          </li>
         </ul>
+        <div class="content__section-button">
+          <button class="save_button button_decor"
+                  type="button" 
+                  onclick="window['insert-floppy'].showModal()" 
+                  aria-controls="insert-floppy"
+          >
+            <svg class="save_button__floppy-icon" viewBox="0 0 39 39">
+              <use xlink:href="./svg/floppy.svg#floppy-svg"/>
+            </svg>
+            <span class="save_button_text button__text">Сохранить на память</span>
+          </button>
+        </div>
       </section>
     </main>
     <dialog class="dialog__box" id="insert-floppy">
       <div class="dialog__box-content">
-        <svg class="floppy-icon">
-          <use href="./svg/floppy.svg#floppy-svg"></use>
+        <svg class="floppy-icon" width="39" height="39" viewBox="0 0 39 39">
+          <use href="./svg/floppy.svg#floppy-svg"/>
         </svg>
         <p class="dialog__box-text">
           Вставьте дискету, чтобы продолжить

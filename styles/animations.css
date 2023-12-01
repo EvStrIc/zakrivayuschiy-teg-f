@@ -12,3 +12,115 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes active-button {
+  from {
+    inset-inline-start: -24px;
+  }
+
+  to {
+    inset-inline-start: -20px;
+  }
+}
+
+.like-icon.is-liked .heart {
+  animation: icon-scale-change 0.3s 0.1s ease-in alternate;
+}
+
+@keyframes icon-scale-change {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  to {
+    transform: scale(1.5);
+    transform-origin: center center;
+  }
+}
+
+.core {
+  fill: transparent;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.card__icon-button:hover .like-icon .core {
+  fill: var(--icon-color, #000);
+  opacity: 1;
+  transition: all 0.3s 0.03s linear;
+}
+
+.card__icon-button:active .like-icon .core {
+  fill: var(--icon-fill-color, #f00);
+  opacity: 1;
+  transition: all 0.3s 0.03s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--icon-fill-color, #f00);
+  opacity: 1;
+  transition: all 0.3s 0.03s linear;
+}
+
+.main-body {
+  fill: transparent;
+  opacity: 0;
+  transition: all 0.3s 0.05s linear;
+}
+
+.card__icon-button:hover .like-icon .main-body {
+  fill: var(--icon-color, #000);
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.card__icon-button:active .like-icon .main-body {
+  fill: var(--icon-fill-color, #f00);
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--icon-fill-color, #f00);
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.contour {
+  transition: all 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--icon-fill-color, #f00);
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon.is-liked .sparks {
+  animation: icon-sparks 0.3s 0.3s ease-in alternate;
+}
+
+@keyframes icon-sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes button-shadow {
+  from {
+    box-shadow: 0 0 0 0 var(--accent-color, #000);
+  }
+
+  to {
+    box-shadow: 2px 2px 0 0 var(--accent-color, #000);
+  }
+}

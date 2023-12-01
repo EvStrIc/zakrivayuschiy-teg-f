@@ -3,6 +3,7 @@
   --box-inline-size: clamp(20rem, -3.75rem + 76vw, 43.75rem);
   --font-main: 'Inter-Variable', sans-serif;
   --font-accent: 'PressStart2P', sans-serif;
+  --button-font-size: 14px;
   --title-font-weight: 700;
   --text-font-weight: 400;
   --card-title-font-weight: 700;

@@ -34,7 +34,7 @@
 
 .header {
   margin-block: 100px;
-  padding-block: clamp(120px, 32%, 136px) 25px;
+  padding-block: clamp(120px, 32%, 136px) 21px;
   padding-inline: clamp(0.875rem, -4.757rem + 28.158vw, 7.563rem);
   display: flex;
   flex-direction: column;
@@ -63,35 +63,32 @@
   text-transform: uppercase;
 }
 
-.header__theme-menu{
+.header__theme-menu {
   margin-inline-start: 18px;
   inline-size: 84px;
-  block-size: 70px;
 }
 
 .theme-menu__list {
   max-inline-size: 100%;
-  max-block-size: 100%;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .theme-menu__item {
   max-inline-size: 100%;
-  max-block-size: 14px;
 }
 
 .theme-menu__button {
   padding: 0;
+  padding-block-start: 1px;
   max-inline-size: 100%;
   appearance: none;
   border: none;
-  border-block-end: 2px solid var(--background-color, #fff);
   cursor: url(../images/image\ 54.png), pointer;
   display: block;
   font-family: var(--font-accent);
-  font-size: 14px;
+  font-size: var(--button-font-size, 14px);
   font-weight: var(--text-font-weight);
   line-height: 14px;
   text-transform: uppercase;
@@ -99,6 +96,7 @@
   opacity: 1;
   transition: opacity 0.3s ease;
   background-color: var(--background-color, #fff);
+  border-block-end: 2px solid var(--background-color, #fff);
 }
 
 .theme-menu__button:focus {
@@ -123,16 +121,6 @@
   display: block;
   color: var(--accent-color, #000);
   animation: active-button 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes active-button {
-  from {
-    inset-inline-start: -24px;
-  }
-
-  to {
-    inset-inline-start: -20px;
-  }
 }
 
 .theme-menu__button::after {
@@ -171,7 +159,7 @@
 }
 
 .content__section-list-card_title {
-  padding: 5px 10px 3px;
+  padding: 4px 10px 4px;
   min-block-size: 32px;
   max-inline-size: 100%;
   display: flex;
@@ -232,7 +220,7 @@
   position: absolute;
   z-index: 1;
   font-family: var(--font-accent);
-  font-size: 14px;
+  font-size: var(--button-font-size, 14px);
   font-variation-settings: 'wght' var(--text-font-weight);
   line-height: 14px;
   opacity: 0.5;
@@ -269,7 +257,7 @@
 
 .content__section-list-card_buttons {
   padding-inline-end: 25px;
-  padding-block-end: 25px;
+  padding-block-end: 24px;
   min-inline-size: 100%;
   align-self: end;
   display: flex;
@@ -284,6 +272,7 @@
   border: none;
   cursor: url(../images/image\ 54.png), pointer;
   padding: 0;
+  padding-block-start: 2px;
   display: block;
   min-inline-size: 39px;
   max-block-size: 38px;
@@ -300,99 +289,9 @@
   border-color: var(--accent-color, #000);
 }
 
-.like-icon.is-liked .heart {
-  animation: icon-scale-change 0.3s 0.1s ease-in alternate;
-}
-
-@keyframes icon-scale-change {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-  }
-
-  to {
-    transform: scale(1.5);
-    transform-origin: center center;
-  }
-}
-
 .heart {
   max-block-size: 32px;
   max-inline-size: 29px;
-}
-
-.core {
-  opacity: 0;
-  transition: all 0.3s linear;
-}
-
-.card__icon-button:hover .like-icon .core {
-  fill: var(--icon-color, #000);
-  opacity: 1;
-  transition: all 0.3s 0.03s linear;
-}
-
-.card__icon-button:active .like-icon .core {
-  fill: var(--icon-fill-color, #f00);
-  opacity: 1;
-  transition: all 0.3s 0.03s linear;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--icon-fill-color, #f00);
-  opacity: 1;
-  transition: all 0.3s 0.03s linear;
-}
-
-.main-body {
-  opacity: 0;
-  transition: all 0.3s 0.05s linear;
-}
-
-.card__icon-button:hover .like-icon .main-body {
-  fill: var(--icon-color, #000);
-  opacity: 1;
-  transition: all 0.3s linear;
-}
-
-.card__icon-button:active .like-icon .main-body {
-  fill: var(--icon-fill-color, #f00);
-  opacity: 1;
-  transition: all 0.3s linear;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--icon-fill-color, #f00);
-  opacity: 1;
-  transition: all 0.3s linear;
-}
-
-.contour {
-  transition: all 0.3s 0.06s linear;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--icon-fill-color, #f00);
-  opacity: 1;
-  transition: all 0.3s linear;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.like-icon.is-liked .sparks {
-  animation: icon-sparks 0.3s 0.3s ease-in alternate;
-}
-
-@keyframes icon-sparks {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 .button_decor {
@@ -409,16 +308,6 @@
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color, #000);
   animation: button-shadow 0.3s ease;
-}
-
-@keyframes button-shadow {
-  from {
-    box-shadow: 0 0 0 0 var(--accent-color, #000);
-  }
-
-  to {
-    box-shadow: 2px 2px 0 0 var(--accent-color, #000);
-  }
 }
 
 .button_decor::after {
@@ -444,7 +333,7 @@
   z-index: 2;
   font-family: var(--font-accent);
   color: var(--button-hover-text-color, #fff);
-  font-size: 14px;
+  font-size: var(--button-font-size, 14px);
   font-variation-settings: 'wght' var(--text-font-weight);
   line-height: 13px;
   mix-blend-mode: difference;
@@ -470,11 +359,13 @@
   display: inline-block;
 }
 
-.content__section-list-button {
+.content__section-button {
+  margin-block-start: 50px;
   margin-block-end: 100px;
   min-inline-size: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .save-button {
@@ -494,8 +385,7 @@
 .save-button__floppy-icon {
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-shrink: 0;
+  display: block;
   max-block-size: 21px;
   max-inline-size: 21px;
   mix-blend-mode: difference;
@@ -524,7 +414,6 @@
 .dialog__box[open] {
   padding: 30px;
   inline-size: clamp(320px, 357px, 357px);
-  max-block-size: 195px;
   display: grid;
   grid-template-rows: 1fr 38px;
   row-gap: 30px;
@@ -542,7 +431,7 @@
   max-inline-size: 234px;
   font-family: var(--font-accent);
   color: var(--accent-color, #000);
-  font-size: 14px;
+  font-size: var(--button-font-size, 14px);
   font-variation-settings: 'wght' var(--text-font-weight);
   line-height: 21px;
   text-transform: uppercase;
