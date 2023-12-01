@@ -509,7 +509,6 @@
   max-block-size: 39px;
   max-inline-size: 39px;
   fill: var(--icon-color, #000);
-  mix-blend-mode: difference;
 }
 
 .dialog__box {
