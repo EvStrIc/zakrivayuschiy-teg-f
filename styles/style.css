@@ -499,7 +499,8 @@
   flex-shrink: 0;
   max-block-size: 21px;
   max-inline-size: 21px;
-  fill: var(--icon-color, #000);
+  fill: var(--button-hover-text-color, #fff);
+  mix-blend-mode: difference;
 }
 
 .floppy-icon {
@@ -509,7 +510,8 @@
   flex-shrink: 0;
   max-block-size: 39px;
   max-inline-size: 39px;
-  fill: var(--icon-color, #000);
+  fill: var(--button-hover-text-color, #fff);
+  mix-blend-mode: difference;
 }
 
 .dialog__box {
