@@ -499,7 +499,7 @@
   flex-shrink: 0;
   max-block-size: 21px;
   max-inline-size: 21px;
-
+  mix-blend-mode: difference;
 }
 
 .floppy-icon {
