@@ -503,7 +503,7 @@
   mix-blend-mode: difference;
 }
 
-.floppy-icon {
+.floppy-icon #floppy-svg {
   display: flex;
   flex-shrink: 0;
   max-block-size: 39px;
