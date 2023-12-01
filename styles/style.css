@@ -506,14 +506,7 @@
   flex-shrink: 0;
   max-block-size: 39px;
   max-inline-size: 39px;
-}
-
-.save-button__floppy-icon .floppy-decor {
-  fill: var(--button-hover-text-color, #fff);
-}
-
-.floppy-icon .floppy-decor {
-  fill: var(--accent-color, #000);
+  mix-blend-mode: difference;
 }
 
 .dialog__box {
