@@ -499,7 +499,7 @@
   flex-shrink: 0;
   max-block-size: 21px;
   max-inline-size: 21px;
-  fill: var(--button-hover-text-color, #fff);
+
   mix-blend-mode: difference;
 }
 
