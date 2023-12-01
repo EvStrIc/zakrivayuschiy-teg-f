@@ -509,7 +509,11 @@
 }
 
 .floppy-dialog {
-  fill: var(--icon-color, #000);
+  fill: var(--button-hover-text-color, #fff);
+}
+
+.floppy-icon .floppy-dialog {
+  fill: var(--accent-color, #000);
 }
 
 .dialog__box {
