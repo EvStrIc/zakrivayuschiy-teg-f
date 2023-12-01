@@ -510,10 +510,6 @@
   max-inline-size: 39px;
 }
 
-.floppy-icon #floppy-svg {
-  fill: var(--icon-color, #000);
-}
-
 .dialog__box {
   position: fixed;
   inset: 0;
