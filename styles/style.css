@@ -504,13 +504,11 @@
 }
 
 .floppy-icon {
-  position: relative;
-  z-index: 2;
   display: flex;
   flex-shrink: 0;
   max-block-size: 39px;
   max-inline-size: 39px;
-  fill: var(--button-hover-text-color, #fff);
+  fill: var(--icon-color, #000);
   mix-blend-mode: difference;
 }
 
