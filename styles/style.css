@@ -47,7 +47,7 @@
   margin-block-end: 20px;
   display: inline-block;
   font-family: var(--font-accent);
-  font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  font-size: clamp(2.625rem, 1.4145rem + 6.0526vw, 4.0625rem);
   font-weight: var(--text-font-weight);
   line-height: 66px;
 }
@@ -493,6 +493,8 @@
 }
 
 .save-button__floppy-icon {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-shrink: 0;
   max-block-size: 21px;
@@ -501,6 +503,8 @@
 }
 
 .floppy-icon {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-shrink: 0;
   max-block-size: 39px;
