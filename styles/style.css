@@ -35,7 +35,7 @@
 .header {
   margin-block: 100px;
   padding-block: clamp(120px, 32%, 136px) 25px;
-  padding-inline: clamp(14px, 17%, 121px);
+  padding-inline: clamp(0.875rem, -4.757rem + 28.158vw, 7.563rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,15 +47,15 @@
   margin-block-end: 20px;
   display: inline-block;
   font-family: var(--font-accent);
-  font-size: clamp(2.625rem, 1.4145rem + 6.0526vw, 4.0625rem);
+  font-size: clamp(2.5625rem, 2.1339rem + 2.1429vw, 4.0625rem);
   font-weight: var(--text-font-weight);
   line-height: 66px;
 }
 
 .header__title {
   margin-block-end: 25px;
+  min-inline-size: max-content;
   display: inline-block;
-  inline-size: min(max-content);
   font-family: var(--font-accent);
   font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
   font-weight: var(--text-font-weight);
@@ -178,15 +178,14 @@
   font-size: 18px;
   font-weight: var(--card-title-font-weight);
   font-variation-settings: 'wght' var(--card-title-font-weight);
-  line-height: 21px;
-  border-bottom: 2px solid var(--accent-color, #000);
+  line-height: 22px;
+  border-bottom: 3px solid var(--accent-color, #000);
 }
 
 .content__section-list-card_image {
   position: relative;
   z-index: 0;
   inline-size: 100%;
-  min-block-size: minmax(320px, 698px);
   display: block;
   overflow: hidden;
   border-bottom: 3px solid var(--accent-color, #000);
@@ -555,26 +554,37 @@
 @media (width <= 376px) {
 
   .box-inline-size {
-    max-inline-size: 100%;
-  }
-
-  .header {
-    padding-inline: 14px;
+    min-inline-size: 100%;
   }
   
   .header__main-title {
+    font-size: clamp(2.8125rem, 1.3839rem + 7.1429vw, 3.0625rem);
     line-height: 49px;
   }
 
   .header__title {
+    font-size: clamp(0.75rem, 0.0357rem + 3.5714vw, 0.875rem);
     line-height: 14px;
   }
 
   .header__theme-menu {
-    margin-inline-start: 19px;
+    margin-inline-start: 20px;
   }
 
+  .content__section-list-card_title {
+    padding: 4px 10px 3px;
+  }
+
+  .image-label {
+    inset-inline-end: 13px;
+  }
+
+  .content__section-list-card_text {
+    padding: 25px 7.7% 25px 25px;
+  }
+  
   .save-button {  
+    max-inline-size: 306px;
     flex-direction: column;
   }
 
