@@ -508,6 +508,10 @@
   max-inline-size: 39px;
 }
 
+.floppy-dialog {
+  fill: var(--icon-color, #000);
+}
+
 .dialog__box {
   position: fixed;
   inset: 0;
@@ -544,6 +548,7 @@
   font-size: 14px;
   font-variation-settings: 'wght' var(--text-font-weight);
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .dialog__box-button {
