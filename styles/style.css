@@ -388,7 +388,6 @@
   block-size: auto;
   display: flex;
   flex-shrink: 0;
-  fill: var(--button-hover-text-color, #000);
   mix-blend-mode: difference;
 }
 
@@ -397,7 +396,7 @@
   flex-shrink: 0;
   max-inline-size: 39px;
   block-size: auto;
-  fill: var(--icon-color, #000);
+  mix-blend-mode: difference;
 }
 
 .dialog__box {
