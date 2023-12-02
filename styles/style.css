@@ -386,15 +386,13 @@
   z-index: 2;
   inline-size: 21px;
   block-size: auto;
-  display: flex;
-  flex-shrink: 0;
+  display: block;
   mix-blend-mode: difference;
 }
 
 .floppy-icon {
-  display: flex;
-  flex-shrink: 0;
-  max-inline-size: 39px;
+  display: block;
+  inline-size: 39px;
   block-size: auto;
 }
 
@@ -484,7 +482,7 @@
   }
 
   .save-button__floppy-icon {
-    min-inline-size: 28px;
+    inline-size: 28px;
     block-size: auto;
   }
 }
