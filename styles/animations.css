@@ -60,7 +60,7 @@
 .like-icon.is-liked .core {
   fill: var(--icon-fill-color, #f00);
   opacity: 1;
-  transition: all 0.3s 0.03s linear;
+  transition: all 0.1s 0.03s linear;
 }
 
 .main-body {
@@ -84,7 +84,7 @@
 .like-icon.is-liked .main-body {
   fill: var(--icon-fill-color, #f00);
   opacity: 1;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }
 
 .contour {

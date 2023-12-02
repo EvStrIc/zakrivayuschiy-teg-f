@@ -360,42 +360,44 @@
 }
 
 .content__section-button {
-  margin-block-start: 50px;
+  margin-block-start: 52px;
   margin-block-end: 100px;
-  min-inline-size: 100%;
+  inline-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.save-button {
+.content__section-button .button_decor {
   padding: 15px 20px;
-  inline-size: clamp(306px, 100%, 339px);
-  min-block-size: 55px;
+  min-inline-size: 335px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .save-button_text {
-  min-inline-size: max-content;
-  max-block-size: 14px;
+  min-inline-size: fit-content;
+  display: inline-block;
 }
 
 .save-button__floppy-icon {
   position: relative;
   z-index: 2;
-  display: block;
-  max-block-size: 21px;
-  max-inline-size: 21px;
+  inline-size: 21px;
+  block-size: auto;
+  display: flex;
+  flex-shrink: 0;
+  fill: var(--button-hover-text-color, #000);
   mix-blend-mode: difference;
 }
 
 .floppy-icon {
   display: flex;
   flex-shrink: 0;
-  max-block-size: 39px;
   max-inline-size: 39px;
+  block-size: auto;
+  fill: var(--accent-color, #000);
   mix-blend-mode: difference;
 }
 
@@ -454,12 +456,17 @@
   }
 
   .header__title {
+    margin-block-end: 24px;
     font-size: clamp(0.75rem, 0.0357rem + 3.5714vw, 0.875rem);
     line-height: 14px;
   }
 
   .header__theme-menu {
     margin-inline-start: 20px;
+  }
+
+  .theme-menu__list {
+    gap: 10px;
   }
 
   .content__section-list-card_title {
@@ -474,15 +481,12 @@
     padding: 25px 7.7% 25px 25px;
   }
   
-  .save-button {  
-    max-inline-size: 306px;
+  .content__section-button .button_decor {  
+    max-inline-size: 310px;
     flex-direction: column;
   }
 
   .save-button__floppy-icon {
-    display: flex;
-    flex-shrink: 0;
-    max-block-size: 28px;
     max-inline-size: 28px;
   }
 }
