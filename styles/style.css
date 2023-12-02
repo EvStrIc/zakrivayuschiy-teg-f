@@ -396,7 +396,6 @@
   flex-shrink: 0;
   max-inline-size: 39px;
   block-size: auto;
-  mix-blend-mode: difference;
 }
 
 .dialog__box {
