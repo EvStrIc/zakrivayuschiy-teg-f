@@ -385,7 +385,7 @@
   position: relative;
   z-index: 2;
   inline-size: 21px;
-  block-size: auto;
+  block-size: 21px;
   display: block;
   mix-blend-mode: difference;
 }
@@ -393,7 +393,7 @@
 .floppy-icon {
   display: block;
   inline-size: 39px;
-  block-size: auto;
+  block-size: 39px;
 }
 
 .dialog__box {
