@@ -388,15 +388,15 @@
   inline-size: 100%;
   block-size: auto;
   display: block;
-  fill: var(--button-hover-text-color, #fff);
-  mix-blend-mode: difference;
+  fill: #000;
+
 }
 
 .floppy-icon {
   display: block;
   inline-size: 39px;
   block-size: 39px;
-  fill: var(--icon-color, #000);
+  fill: #000;
 }
 
 .dialog__box {
