@@ -428,8 +428,10 @@
   align-items: center;
 }
 
-.floppy-icon {
+.dialog__box-content .floppy-icon {
   flex-shrink: 0;
+  min-width: 39px;
+  width: 39px;
   color: var(--accent-color, #000);
 }
 
