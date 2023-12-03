@@ -300,9 +300,9 @@
   appearance: none;
   border: none;
   cursor: url(../images/image\ 54.png), pointer;
+  color: var(--button-hover-text-color, #fff);
   border: 2px solid var(--accent-color, #000);
   background-color: var(--background-color, #fff);
-  color: var(--button-hover-text-color, #fff);
 }
 
 .button_decor:focus {
@@ -333,7 +333,6 @@
   position: relative;
   z-index: 2;
   font-family: var(--font-accent);
-
   font-size: var(--button-font-size, 14px);
   font-variation-settings: 'wght' var(--text-font-weight);
   line-height: 13px;
@@ -422,13 +421,14 @@
   display: flex;
   gap: 20px;
   align-items: center;
+
 }
 
 .floppy-icon {
   display: block;
   inline-size: 39px;
   block-size: 39px;
-  fill: var(--accent-color, #000);
+  color: var(--accent-color, #000);
 }
 
 .dialog__box-text {
