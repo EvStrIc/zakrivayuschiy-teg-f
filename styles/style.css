@@ -487,8 +487,8 @@
   }
 
   .save_button__floppy-icon {
-    padding-block-start: 9px;
+    padding-block-start: 0;
     min-inline-size: 39px;
-    inline-size: 40px;
+    inline-size: 28px;
   }
 }
