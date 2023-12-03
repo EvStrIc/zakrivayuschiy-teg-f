@@ -385,6 +385,7 @@
   block-size: auto;
   display: block;
   fill: var(--accent-color, #000)
+  mix-blend-mode: difference;
 }
 
 .save-button_text {
