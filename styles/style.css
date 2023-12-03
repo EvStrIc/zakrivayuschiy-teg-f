@@ -422,9 +422,10 @@
 }
 
 .dialog__box-content .floppy-icon {
+  padding-block-start: 10px;
   flex-shrink: 0;
-  min-width: 39px;
-  width: 39px;
+  min-inline-size: 55px;
+  inline-size: 39px;
   color: var(--accent-color, #000);
 }
 
