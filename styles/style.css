@@ -485,10 +485,12 @@
     padding-block: 15px;
     min-inline-size: 310px;
     flex-direction: column;
+    gap: 5px;
   }
 
   .save_button__floppy-icon {
     padding-block-start: 0;
+    padding-inline-start: 5px;
     min-inline-size: 39px;
     inline-size: 28px;
   }
