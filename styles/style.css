@@ -385,8 +385,7 @@
   inline-size: 100%;
   block-size: auto;
   display: block;
-  fill: var(--button-hover-color, #fff);
-  mix-blend-mode: difference;
+  fill: var(--accent-color, #000);
 }
 
 .save_button_text {
