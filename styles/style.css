@@ -378,6 +378,7 @@
 }
 
 .save_button__floppy-icon {
+  padding-block-start: 5px;
   position: relative;
   z-index: 2;
   flex-shrink: 0;
