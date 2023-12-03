@@ -383,9 +383,7 @@
   z-index: 2;
   max-inline-size: 21px;
   inline-size: 100%;
-  block-size: auto;
-  display: flex;
-  flex-shrink: 0;
+  display: block;
   mix-blend-mode: difference;
 }
 
