@@ -425,7 +425,6 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  color: var(--accent-color, #000);
 }
 
 .dialog__box-text {
