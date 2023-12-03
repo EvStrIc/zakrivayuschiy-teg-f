@@ -382,6 +382,7 @@
   flex-shrink: 0;
   min-inline-size: 21px;
   inline-size: 21px;
+  block-size: 21px;
 }
 
 .save_button__floppy-icon {
@@ -389,7 +390,6 @@
   z-index: 2;
   min-inline-size: 21px;
   inline-size: 21px;
-  inline-size: 100%;
   display: block;
   mix-blend-mode: difference;
 }
@@ -431,7 +431,7 @@
 .floppy-icon {
   min-inline-size: 39px;
   inline-size: 39px;
-  block-size: auto;
+  block-size: 39px;
   display: block;
   color: var(--accent-color, #000);
 }
