@@ -375,14 +375,13 @@
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  gap: 8px;
 }
 
 .save_button__floppy-icon {
   position: relative;
   z-index: 2;
   flex-shrink: 0;
-  min-inline-size: 21px;
+  min-inline-size: 29px;
   inline-size: 21px;
   mix-blend-mode: difference;
 }
