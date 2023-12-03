@@ -378,6 +378,12 @@
   gap: 8px;
 }
 
+.button_decor svg {
+  flex-shrink: 0;
+  min-inline-size: 21px;
+  inline-size: 21px;
+}
+
 .save_button__floppy-icon {
   position: relative;
   z-index: 2;
