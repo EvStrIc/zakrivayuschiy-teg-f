@@ -384,8 +384,9 @@
 .save-button__floppy-icon {
   position: relative;
   z-index: 2;
-  inline-size: 21px;
-  block-size: 21px;
+  max-inline-size: 21px;
+  inline-size: 100%;
+  block-size: auto;
   display: block;
   mix-blend-mode: difference;
 }
