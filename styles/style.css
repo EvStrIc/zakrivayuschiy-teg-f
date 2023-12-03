@@ -377,7 +377,7 @@
   gap: 8px;
 }
 
-.save-button__floppy-icon {
+.save_button__floppy-icon {
   position: relative;
   z-index: 2;
   max-inline-size: 21px;
@@ -388,7 +388,7 @@
   mix-blend-mode: difference;
 }
 
-.save-button_text {
+.save_button_text {
   min-inline-size: fit-content;
   display: inline-block;
 }
@@ -485,7 +485,7 @@
     flex-direction: column;
   }
 
-  .save-button__floppy-icon {
+  .save_button__floppy-icon {
     max-inline-size: 28px;
     inline-size: 100%;
     block-size: auto;
