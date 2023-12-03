@@ -428,7 +428,7 @@
   align-items: center;
 }
 
-.dialog__box-content svg {
+.floppy-icon {
   flex-shrink: 0;
   color: var(--accent-color, #000);
 }
