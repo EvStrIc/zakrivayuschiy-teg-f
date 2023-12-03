@@ -370,7 +370,7 @@
 }
 
 .content__section-button .button_decor {
-  padding: 10px 20px;
+  padding: 5px 20px;
   min-inline-size: 335px;
   display: flex;
   flex-shrink: 0;
@@ -378,7 +378,7 @@
 }
 
 .save_button__floppy-icon {
-  padding-block-start: 5px;
+  padding-block-start: 8px;
   position: relative;
   z-index: 2;
   flex-shrink: 0;
