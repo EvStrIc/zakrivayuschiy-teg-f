@@ -482,6 +482,7 @@
   }
   
   .content__section-button .button_decor {  
+    padding-block: 15px;
     min-inline-size: 310px;
     flex-direction: column;
   }
