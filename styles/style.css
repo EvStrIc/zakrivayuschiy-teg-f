@@ -390,7 +390,7 @@
 }
 
 .save_button_text {
-  padding-block-start: 2px;
+  padding-block-start: 1px;
   min-inline-size: fit-content;
   display: inline-block;
 }
