@@ -377,11 +377,6 @@
   gap: 8px;
 }
 
-.save-button_text {
-  min-inline-size: fit-content;
-  display: inline-block;
-}
-
 .save-button__floppy-icon {
   position: relative;
   z-index: 2;
@@ -389,14 +384,12 @@
   inline-size: 100%;
   block-size: auto;
   display: block;
-  fill: #000;
+  fill: var(--accent-color, #000)
 }
 
-.floppy-icon {
-  display: block;
-  inline-size: 39px;
-  block-size: 39px;
-  fill: #000;
+.save-button_text {
+  min-inline-size: fit-content;
+  display: inline-block;
 }
 
 .dialog__box {
@@ -425,6 +418,13 @@
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.floppy-icon {
+  display: block;
+  inline-size: 39px;
+  block-size: 39px;
+  fill: var(--accent-color, #000);
 }
 
 .dialog__box-text {
@@ -485,7 +485,8 @@
   }
 
   .save-button__floppy-icon {
-    inline-size: 28px;
+    max-inline-size: 28px;
+    inline-size: 100%;
     block-size: auto;
   }
 }
