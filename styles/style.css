@@ -386,7 +386,6 @@
   block-size: auto;
   display: flex;
   flex-shrink: 0;
-  fill: var(--button-hover-text-color, #fff);
   mix-blend-mode: difference;
 }
 
