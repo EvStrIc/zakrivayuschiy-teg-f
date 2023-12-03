@@ -419,13 +419,12 @@
   display: flex;
   gap: 20px;
   align-items: center;
-
 }
 
 .floppy-icon {
-  display: block;
   min-inline-size: 39px;
-  block-size: 39px;
+  block-size: auto;
+  display: block;
   color: var(--accent-color, #000);
 }
 
