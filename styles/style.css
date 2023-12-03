@@ -485,7 +485,6 @@
     padding-block: 12px;
     min-inline-size: 310px;
     flex-direction: column;
-    gap: 2px;
   }
 
   .save_button__floppy-icon {
