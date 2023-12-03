@@ -482,9 +482,10 @@
   }
   
   .content__section-button .button_decor {  
-    padding-block: 12px;
+    padding-block: 11px;
     min-inline-size: 310px;
     flex-direction: column;
+    gap: 1px;
   }
 
   .save_button__floppy-icon {
