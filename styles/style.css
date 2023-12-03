@@ -385,13 +385,14 @@
   inline-size: 100%;
   block-size: auto;
   display: block;
-  fill: var( --button-hover-text-color, #000);
+  fill: var( --button-hover-text-color, #fff);
+  mix-blend-mode: difference;
 }
 
 .save_button_text {
+  padding-block-start: 2px;
   min-inline-size: fit-content;
   display: inline-block;
-  padding-block-start: 2px;
 }
 
 .dialog__box {
