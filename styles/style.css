@@ -385,7 +385,7 @@
   inline-size: 100%;
   block-size: auto;
   display: block;
-  fill: var( --button-hover-text-color, #fff);
+  fill: var(--button-hover-color, #fff);
   mix-blend-mode: difference;
 }
 
